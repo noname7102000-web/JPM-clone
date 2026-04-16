@@ -15,7 +15,7 @@ const Hero = () => {
         playsInline
       >
         {/* Thay src bằng link video của bạn hoặc biến {bgVideo} nếu dùng file nội bộ */}
-        <source src="/Drink A Yak - Jidanofu  JDM Edit  Singularity  Phonk 2023 - Singularity (1080p, h264).mp4" type="video/mp4" />
+        <source src="./Drink A Yak - Jidanofu  JDM Edit  Singularity  Phonk 2023 - Singularity (1080p, h264).mp4" type="video/mp4" />
         Trình duyệt của bạn không hỗ trợ thẻ video.
       </video>
 

@@ -6,27 +6,27 @@ const LifeStyleGoods = () => {
     { 
       title: "APPAREL COLLECTION", 
       count: "1208 products", 
-      img: "/public/car4.jpg" 
+      img: "./public/car4.jpg" 
     },
     { 
       title: "BANNERS + STICKERS", 
       count: "73 products", 
-      img: "/public/car8.jpg" 
+      img: "./public/car8.jpg" 
     },
     { 
       title: "EVERYDAY ITEMS", 
       count: "84 products", 
-      img: "/public/car7.jpg" 
+      img: "./public/car7.jpg" 
     },
     { 
       title: "TOOLS", 
       count: "879 products", 
-      img: "/public/car6.avif" 
+      img: "./public/car6.avif" 
     },
     { 
       title: "DECOR", 
       count: "12 products", 
-      img: "/public/car5.jpg" 
+      img: "./public/car5.jpg" 
     }
   ];
 
