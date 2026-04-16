@@ -21,7 +21,7 @@
   height: 350px; /* Chiều cao banner, bạn có thể tự chỉnh */
   
   /* BẠN THAY LINK ẢNH HPS BANNER VÀO ĐÂY */
-  background-image: url('/public/car14.jpg');
+  background-image: url('./public/car14.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

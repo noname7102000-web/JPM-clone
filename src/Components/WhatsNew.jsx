@@ -7,7 +7,7 @@ const WhatsNew = () => {
     {
       id: 1,
       name: "Mishimoto 2022+ Subaru WRX Shift Knob World Rally Blue",
-      img: "./public/car25.jpg",
+      img: "../public/car25.jpg",
       oldPrice: "$111.00",
       discountAmount: "-$10.05",
       newPrice: "$100.95",
@@ -16,7 +16,7 @@ const WhatsNew = () => {
     {
       id: 2,
       name: "Mishimoto 2023+ Honda Civic Type R Oil Cooler Kit - Black",
-      img: "./public/car26.jpg",
+      img: "../public/car26.jpg",
       oldPrice: "$880.00",
       discountAmount: "-$80.05",
       newPrice: "$799.95",
@@ -25,7 +25,7 @@ const WhatsNew = () => {
     {
       id: 3,
       name: "Mishimoto 2025+ Dodge RAM 1500 License Plate Relocation Kit",
-      img: "./public/car27.jpg",
+      img: "../public/car27.jpg",
       oldPrice: "$110.00",
       discountAmount: "-$10.05",
       newPrice: "$99.95",
@@ -34,7 +34,7 @@ const WhatsNew = () => {
     {
       id: 4,
       name: "Mishimoto 2011-2014 Ford F-150 EcoBoost Intercooler - Black",
-      img: "./public/car28.jpg",
+      img: "../public/car28.jpg",
       oldPrice: "$1,100.00",
       discountAmount: "-$100.05",
       newPrice: "$999.95",
@@ -43,7 +43,7 @@ const WhatsNew = () => {
     {
       id: 5,
       name: "Mishimoto 2024+ Toyota Tacoma Silicone Coolant Hose Kit - AT - Red",
-      img: "./public/car12.jpg",
+      img: "../public/car12.jpg",
       oldPrice: "$370.00",
       discountAmount: "-$34.05",
       newPrice: "$335.95",
@@ -52,7 +52,7 @@ const WhatsNew = () => {
     {
       id: 6,
       name: "Mishimoto Universal Silicone Hose",
-      img: "./public/car13.jpg",
+      img: "../public/car13.jpg",
       oldPrice: "$45.00",
       discountAmount: "-$5.00",
       newPrice: "$40.00",

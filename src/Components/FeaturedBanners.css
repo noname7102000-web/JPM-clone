@@ -69,17 +69,17 @@
 /* Các banner cụ thể (Bạn cần thay URL ảnh thật vào đây) */
 .cobb-banner {
   height: 250px;
-  background-image: url('/public/car3.jpg'); 
+  background-image: url('./public/car3.jpg'); 
 }
 
 .shift-banner {
   height: 250px;
-  background-image: url('/public/car2.jpg');
+  background-image: url('./public/car2.jpg');
 }
 
 .hks-banner {
   width: 100%;
-  background-image: url('/public/Car1.jpg');
+  background-image: url('./public/Car1.jpg');
   flex-direction: column;
 }
 

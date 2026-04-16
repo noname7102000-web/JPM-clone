@@ -146,7 +146,7 @@ const LoginAnim = () => {
             <button type="submit" className="btn-login">Log in</button>
             
             <button type="button" className="btn-google">
-              <img src="/public/GOOGLE.png" alt="Google" />
+              <img src="./public/GOOGLE.png" alt="Google" />
               Log in with Google
             </button>
           </form>
