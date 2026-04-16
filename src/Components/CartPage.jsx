@@ -11,7 +11,7 @@ const CartPage = () => {
       brand: "RAYS ENGINEERING",
       price: 850.00,
       quantity: 1,
-      image: "/public/car10.jpg" // Icon mâm xịn
+      image: "./public/car10.jpg" // Icon mâm xịn
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const CartPage = () => {
       brand: "NARDI TORINO",
       price: 320.00,
       quantity: 1,
-      image: "/public/car24.jpg" // Icon vô lăng
+      image: "./public/car24.jpg" // Icon vô lăng
     }
   ]);
 
