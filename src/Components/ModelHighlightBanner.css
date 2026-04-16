@@ -1,0 +1,78 @@
+.model-highlight-section {
+  position: relative;
+  width: 100%;
+  height: 450px; /* Bạn có thể điều chỉnh độ cao tùy ý */
+  
+  /* BẠN HÃY THAY LINK ẢNH THẬT VÀO ĐÂY */
+  background-image: url('/public/car11.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Tùy chọn: Lớp phủ gradient hoặc màu đen mờ để chữ trắng nổi bật hơn */
+.highlight-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Độ mờ 20% */
+  z-index: 1;
+}
+
+.highlight-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight-content h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 5px 0;
+  letter-spacing: -1px;
+}
+
+.highlight-content p {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px; /* Khoảng cách giữa các chữ cái rộng ra giống trong ảnh */
+  margin: 0 0 25px 0;
+}
+
+.highlight-content .shop-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px 35px;
+  border-radius: 4px; /* Bo góc nhẹ */
+  transition: all 0.3s ease;
+}
+
+.highlight-content .shop-btn:hover {
+  background-color: #ddd; /* Tối đi một chút khi hover */
+  transform: translateY(-2px);
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .model-highlight-section {
+    height: 300px;
+  }
+  .highlight-content h2 {
+    font-size: 32px;
+  }
+  .highlight-content p {
+    font-size: 12px;
+  }
+}

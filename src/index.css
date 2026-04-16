@@ -1,0 +1,11 @@
+/* Xóa bỏ khoảng cách mặc định của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000; /* Để màu đen cho hợp với giao diện ShopJDM */
+  font-family: Arial, sans-serif;
+}

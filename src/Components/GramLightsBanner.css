@@ -1,0 +1,77 @@
+.gram-lights-section {
+  position: relative;
+  /* Canh lề 2 bên 50px cho bằng với các section trước, bo góc giống trong ảnh */
+  width: calc(100% - 100px); 
+  max-width: 1600px;
+  height: 350px;
+  margin: 0 auto 50px auto; 
+  border-radius: 6px; 
+  overflow: hidden;
+  
+  /* BỆ HẠ THAY LINK ẢNH THÙNG CARTON VÀO ĐÂY NHÉ */
+ background-image: url("/car22.jpg");
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.gram-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35); /* Làm tối nền đi 35% */
+  z-index: 1;
+}
+
+.gram-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gram-content h2 {
+  color: #fff;
+  font-size: 46px; /* Chữ to, rõ ràng */
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin: 0 0 25px 0;
+}
+
+/* Nút bấm mặc định: Nền trắng, chữ đen */
+.shop-here-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 12px 30px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hiệu ứng rê chuột: Nền đen, chữ trắng y hệt ảnh thứ 2 ngài gửi */
+.shop-here-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 768px) {
+  .gram-lights-section {
+    width: 100%; /* Tràn viền trên mobile */
+    border-radius: 0;
+    height: 250px;
+    margin-bottom: 30px;
+  }
+  .gram-content h2 {
+    font-size: 30px;
+  }
+}

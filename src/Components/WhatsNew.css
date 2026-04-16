@@ -1,0 +1,213 @@
+.whats-new-section {
+  padding: 20px 50px 50px 50px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* === HEADER === */
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  padding-right: 20px;
+  color: #000;
+}
+
+.header-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-right: 20px;
+}
+
+.header-actions-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Nút View All (Tái sử dụng style cũ) */
+.view-all-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Nút Nav (< >) */
+.slider-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #f9f9f9;
+  border-color: #999;
+}
+
+/* === SLIDER & THẺ SẢN PHẨM === */
+.products-slider {
+  display: flex;
+  gap: 0; /* Không dùng gap vì chúng ta sẽ dùng border của card để tạo lưới */
+  overflow-x: auto; /* Cho phép cuộn ngang */
+  scroll-snap-type: x mandatory; /* Cuộn mượt từng thẻ */
+  padding: 10px 0 20px 0; /* Đệm trên/dưới để shadow lúc hover không bị cắt mất */
+  
+  /* Ẩn thanh cuộn (scrollbar) cho đẹp */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+.products-slider::-webkit-scrollbar { 
+  display: none; /* Safari and Chrome */
+}
+
+.product-card {
+  flex: 0 0 20%; /* Mặc định hiện 5 cột (100% / 5) */
+  min-width: 220px;
+  padding: 25px 20px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  position: relative;
+  background-color: #fff;
+  scroll-snap-align: start;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Fix border cột đầu tiên */
+.product-card:first-child {
+  border-left: 1px solid #eee;
+}
+
+/* Hiệu ứng HOVER nổi lên y hệt thẻ giữa trong hình */
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  border-color: transparent;
+  z-index: 10; /* Nổi đè lên các thẻ bên cạnh */
+}
+
+/* Tag giảm giá (Save $X.XX) */
+.save-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #fff;
+  border: 1px solid #ffcccc;
+  color: #e63946;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.product-img-wrapper {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Giới hạn tối đa 3 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Khu vực Giá */
+.product-pricing {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.old-price {
+  font-size: 12px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.discount-amount {
+  font-size: 10px;
+  color: #666;
+  font-weight: 600;
+}
+
+.new-price {
+  font-size: 16px;
+  color: #e63946; /* Màu đỏ đặc trưng */
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .product-card { flex: 0 0 25%; } /* 4 cột */
+}
+
+@media (max-width: 900px) {
+  .product-card { flex: 0 0 33.333%; } /* 3 cột */
+}
+
+@media (max-width: 600px) {
+  .product-card { flex: 0 0 50%; } /* 2 cột */
+  .section-header h2 { font-size: 20px; }
+  .header-line { display: none; }
+  .header-actions-wrapper { margin-left: auto; }
+}

@@ -1,0 +1,75 @@
+.popular-models-section {
+  padding: 40px 50px;
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  white-space: nowrap;
+  padding-right: 20px;
+}
+
+.header-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #ddd; /* Đường kẻ ngang bên cạnh title */
+}
+
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.model-card {
+  text-align: center;
+  cursor: pointer;
+}
+
+.model-img-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.model-img-wrapper img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.model-card:hover .model-img-wrapper {
+  transform: translateY(-5px); /* Hiệu ứng nảy nhẹ khi hover */
+}
+
+.model-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic; /* Chữ nghiêng giống trong ảnh */
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 1024px) {
+  .models-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .models-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

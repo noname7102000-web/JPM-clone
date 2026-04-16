@@ -1,0 +1,70 @@
+/* Khung chứa toàn bộ Banner */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 600px; /* Bạn có thể chỉnh độ cao tùy ý (VD: 80vh, 500px) */
+  display: flex;
+  align-items: center; /* Căn giữa nội dung theo chiều dọc */
+  padding-left: 10%; /* Đẩy nội dung xích vào từ bên trái giống trong ảnh */
+  overflow: hidden; /* Cắt phần video thừa ra ngoài khung */
+}
+
+/* Cấu hình Video chìm xuống làm nền */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Quan trọng: Ép video phủ kín màn hình mà không bị méo tỉ lệ */
+  z-index: 0; /* Nằm dưới cùng */
+}
+
+/* Lớp phủ đen mờ (Giúp chữ luôn dễ đọc dù video sáng hay tối) */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Độ mờ 50% */
+  z-index: 1; /* Nằm trên video, dưới chữ */
+}
+
+/* Phần nội dung chữ */
+.hero-content {
+  position: relative;
+  z-index: 2; /* Nổi lên trên cùng */
+  max-width: 600px; /* Giới hạn chiều rộng để chữ không chạy tuột ra giữa màn hình */
+}
+
+.hero-title {
+  color: #fff;
+  font-size: 20px;
+  font-style: italic; /* Chữ nghiêng giống ảnh */
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Nút Shop Now */
+.shop-now-btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: 1px solid #fff; /* Viền trắng mảnh */
+  border-radius: 4px; /* Bo góc nhẹ */
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+.shop-now-btn:hover {
+  background-color: #fff;
+  color: #000; /* Nền trắng, chữ đen */
+}

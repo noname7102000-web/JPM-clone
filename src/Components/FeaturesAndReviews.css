@@ -1,0 +1,149 @@
+.features-reviews-container {
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Khu vực 3 tính năng */
+.features-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 80px auto;
+  text-align: center;
+}
+
+.feature-box {
+  flex: 1;
+  max-width: 350px;
+}
+
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  background-color: #fffafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 50px;
+  height: 50px;
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.feature-box p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Khu vực Đánh giá */
+.reviews-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reviews-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.review-summary {
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.verified {
+  color: #008080; /* Màu xanh ngọc */
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.review-slider {
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-icon {
+  font-size: 40px;
+  color: #008080;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.review-stars {
+  color: #008080;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.review-author {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.review-author span {
+  background-color: #111;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 4px;
+  margin-left: 5px;
+}
+
+.review-product {
+  color: #333;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Nút chuyển Slider */
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slider-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+}
+
+.slider-btn:hover {
+  transform: scale(1.2);
+  color: #d32f2f;
+}

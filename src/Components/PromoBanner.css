@@ -1,0 +1,38 @@
+.promo-banner-container {
+  padding: 0 50px 40px 50px;
+  background-color: #fff;
+}
+
+.promo-banner-link {
+  display: block;
+  width: 100%;
+  border-radius: 4px; /* Bo góc nhẹ nếu muốn */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.promo-banner-link:hover {
+  transform: scale(1.01); /* Zoom nhẹ toàn bộ banner khi hover */
+}
+
+.promo-banner-image {
+  width: 100%;
+  height: 350px; /* Chiều cao banner, bạn có thể tự chỉnh */
+  
+  /* BẠN THAY LINK ẢNH HPS BANNER VÀO ĐÂY */
+  background-image: url('/public/car14.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 1024px) {
+  .promo-banner-image { height: 250px; }
+}
+
+@media (max-width: 768px) {
+  .promo-banner-container { padding: 0 20px 30px 20px; }
+  .promo-banner-image { height: 150px; }
+}

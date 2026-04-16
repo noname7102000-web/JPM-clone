@@ -1,0 +1,108 @@
+.featured-banners-section {
+  padding: 0 50px 50px 50px;
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.banners-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.banners-right {
+  flex: 1;
+  display: flex;
+}
+
+.banner-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333; /* Màu nền dự phòng */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.banner-card:hover {
+  transform: scale(1.02);
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Làm tối nền để nổi chữ */
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.banner-card:hover .banner-overlay {
+  background-color: rgba(0, 0, 0, 0.1); /* Sáng lên khi hover */
+}
+
+.darken-more {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-card h2, .banner-card h3, .hks-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 0;
+}
+
+.banner-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+/* Các banner cụ thể (Bạn cần thay URL ảnh thật vào đây) */
+.cobb-banner {
+  height: 250px;
+  background-image: url('/public/car3.jpg'); 
+}
+
+.shift-banner {
+  height: 250px;
+  background-image: url('/public/car2.jpg');
+}
+
+.hks-banner {
+  width: 100%;
+  background-image: url('/public/Car1.jpg');
+  flex-direction: column;
+}
+
+.hks-content h2 {
+  font-size: 60px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.hks-content p {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .featured-banners-section {
+    flex-direction: column;
+  }
+  .hks-banner {
+    height: 400px;
+  }
+}

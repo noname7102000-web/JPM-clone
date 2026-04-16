@@ -1,0 +1,271 @@
+/* Nền đen hầm hố */
+.jdm-cart-bg {
+  background-color: #080808;
+  background-image: linear-gradient(180deg, #111 0%, #000 100%);
+  min-height: 85vh;
+  padding: 50px 20px;
+  color: #fff;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.jdm-cart-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tiêu đề Neon */
+.cart-header-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cart-header-title h1 {
+  font-size: 45px;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.neon-red {
+  color: #ff0033;
+  text-shadow: 0 0 15px rgba(255, 0, 51, 0.6);
+}
+
+.cart-header-title p {
+  color: #888;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Chia 2 cột mượt mà */
+.cart-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* CỘT TRÁI - DANH SÁCH HÀNG */
+.cart-items-wrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.empty-cart-msg {
+  padding: 50px;
+  text-align: center;
+  background: #111;
+  border: 1px dashed #444;
+  border-radius: 10px;
+  color: #ff0033;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.jdm-cart-item {
+  display: flex;
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.jdm-cart-item:hover {
+  border-color: #ff0033;
+  box-shadow: 0 10px 30px rgba(255, 0, 51, 0.15);
+  transform: translateX(5px);
+}
+
+.item-img-box {
+  width: 100px;
+  height: 100px;
+  background: #0a0a0a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border: 1px solid #222;
+}
+
+.item-img-box img {
+  width: 80%;
+  height: auto;
+}
+
+.item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-brand {
+  color: #ff0033;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.item-name {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #666;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  color: #ff0033;
+}
+
+.item-qty-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.item-price {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  background: #000;
+  border: 1px solid #333;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.qty-controls button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.qty-controls button:hover {
+  background: #ff0033;
+}
+
+.qty-controls span {
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.item-subtotal-red {
+  color: #ff0033;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+/* CỘT PHẢI - BILL THANH TOÁN */
+.cart-summary-wrapper {
+  flex: 1;
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid #333;
+  border-top: 4px solid #ff0033;
+  border-radius: 12px;
+  padding: 30px;
+  position: sticky;
+  top: 100px;
+}
+
+.cart-summary-wrapper h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.summary-details {
+  margin-bottom: 30px;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #aaa;
+  font-size: 15px;
+}
+
+.summary-total-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.neon-total {
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 0, 51, 0.8);
+}
+
+.checkout-btn-vip {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+  color: #fff;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: not-allowed;
+  transition: 0.3s;
+  margin-bottom: 20px;
+}
+
+.checkout-btn-vip.active {
+  background: #ff0033;
+  border-color: #ff0033;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 0, 51, 0.4);
+}
+
+.checkout-btn-vip.active:hover {
+  background: #cc0029;
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(255, 0, 51, 0.6);
+}
+
+.back-to-shop-link {
+  display: block;
+  text-align: center;
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.back-to-shop-link:hover {
+  color: #fff;
+}
