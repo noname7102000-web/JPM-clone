@@ -3,11 +3,11 @@ import './WheelsSection.css';
 
 const WheelsSection = () => {
   const wheels = [
-    { name: "Advan Wheels", img: "../public/wheels 1.jpg" },
-    { name: "Gram Lights Wheels", img: "../public/wheels 2.jpg" },
-    { name: "SSR Wheels", img: "../public/wheels 3.jpg" },
-    { name: "Work Wheels", img: "./public/wheels 4.jpg" },
-    { name: "WedsSport Wheels", img: "../public/wheels 5.jpg" }
+    { name: "Advan Wheels", img: ". /wheels 1.jpg" },
+    { name: "Gram Lights Wheels", img: ". /wheels 2.jpg" },
+    { name: "SSR Wheels", img: ". /wheels 3.jpg" },
+    { name: "Work Wheels", img: " /wheels 4.jpg" },
+    { name: "WedsSport Wheels", img: ". /wheels 5.jpg" }
   ];
 
   return (
