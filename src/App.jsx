@@ -10,7 +10,6 @@ import PromoBanner from './Components/PromoBanner';
 import WheelsSection from './Components/WheelsSection';
 import GramLightsBanner from './Components/GramLightsBanner';
 import PopularModels from './Components/PopularModels';
-import LifestyleGoods from './Components/LifestyleGoods';
 import FeaturesAndReviews from './Components/FeaturesAndReviews';
 import Footer from './Components/Footer';
 import CartPage from './Components/CartPage';
@@ -40,7 +39,6 @@ function App() {
               <WheelsSection />        {/* Bánh xe (Advan, Gram Lights...) */}
               <GramLightsBanner />     {/* Banner Thùng Carton Gram Lights */}
               <PopularModels />        {/* Các mẫu xe phổ biến */}
-              <LifestyleGoods />       {/* Hàng hóa phong cách sống */}
               <FeaturesAndReviews />   {/* Cam kết & Đánh giá khách hàng */}
             </>
           } />
@@ -50,6 +48,9 @@ function App() {
 
           {/* TRANG CHI TIẾT XE */}
           <Route path="/model-details" element={<ModelPage />} />
+
+          {/* TRANG GIỎ HÀNG: VI THẦN ĐÃ BỔ SUNG Ở ĐÂY Ạ! */}
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
 
         {/* Footer luôn nằm dưới đáy */}
